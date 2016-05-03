@@ -195,3 +195,5 @@ exec --no-startup-id gnome-control-center sound
 bindsym Print exec scrot
 bindsym $mod+Print exec scrot -s
 bindsym $mod+c exec google-chrome
+
+exec_always emacs --daemon
