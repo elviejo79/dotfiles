@@ -175,12 +175,13 @@ bindsym XF86AudioPrev exec playerctl previous
 exec_always nm-applet
 
 exec --no-startup-id i3-msg 'workspace 1; exec gnome-terminal'
-exec --no-startup-id i3-msg 'workspace 1; exec google-chrome'
+exec --no-startup-id i3-msg 'workspace 1; exec firefox'
 
 
 exec --no-startup-id dropbox start
+exec --no-startup-id insync start
 exec --no-startup-id gnome-control-center sound
-exec --no-startup-id emacs -daemon
+exec_always emacs -daemon
 
 
 #exec --no-startup-id feh --bg-fill ~/Pictures/AC.jpg
@@ -190,7 +191,7 @@ exec --no-startup-id emacs -daemon
 # https://ondrejsika.com/blog/2014/04/21/screenshot-in-i3wm-with-scrot.html
 bindsym Print exec scrot
 bindsym $mod+Print exec scrot -s
-bindsym $mod+c exec google-chrome
+bindsym $mod+c exec firefox
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
